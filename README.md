@@ -31,3 +31,28 @@ If you are not ready with the changes go back to working file mode
 
 BYPASS THE STAGING PHASE I.E. FROM WORKING DIRECTLY TO COMMIT (Not recommended)
     ```git commit -a -m "your message"
+
+DELETE A FILE
+Delete file command 
+    ``` git rm "<file-name>"
+ But if you change your mind --- lolol like me 
+    ```git restore "<file-name>"
+
+RENAME A File
+    ```git mv  "<old-file-name>" "<new-file-name>"
+
+REVIEW COMMITS DONE SO FAR
+    ```git log (commits with detailed desc)
+    ```git log --oneline (this is for one line details)
+
+
+    AMMEND A COMMIT (Rather than going the long way -- correct the previous commit)
+        ```git commit -m "your correct message" --amend
+
+    DIG INTO THE SPECIFICS -- CHECK WHAT COMMITS WERE DONE
+        ```git log -p
+
+    MODIFY THE ORDER OF COMMITS 
+        ```git rebase -i --root
+
+
