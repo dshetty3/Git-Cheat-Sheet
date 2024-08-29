@@ -54,5 +54,20 @@ REVIEW COMMITS DONE SO FAR
 
     MODIFY THE ORDER OF COMMITS 
         ```git rebase -i --root
+        goes to edit 
+        press :x enter
+
+BRANCHES 
+Basically a copy of your main branch - has all entries 
+used usually during bug fix 
+
+    CREATE A NEW BRANCH
+        ```git branch branchName
+
+    CHECK NUMBER OF BRANCHES YOU HAVE 
+        ```git branch
+    
+    SWITCH TO ANOTHER BRANCH
+        ```git switch branch-name
 
 
