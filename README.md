@@ -55,4 +55,6 @@ REVIEW COMMITS DONE SO FAR
     MODIFY THE ORDER OF COMMITS 
         ```git rebase -i --root
 
+    MERGE YOUR CHANGES FROM YOUR BRANCH TO MAIN BRANCH
+        ```git merge -m "your merge message" branch-name
 
