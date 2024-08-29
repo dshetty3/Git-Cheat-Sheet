@@ -73,3 +73,12 @@ used usually during bug fix
     MERGE YOUR CHANGES FROM YOUR BRANCH TO MAIN BRANCH
         ```git merge -m "your merge message" branch-name
 
+    DELETE THE BRANCH
+        ```git branch -d FixTemp
+
+    SWITCH TO NEW BRANCH WHILE CREATING IT
+        ```git switch -c branchName
+
+MERGE CONFLICTS
+
+
