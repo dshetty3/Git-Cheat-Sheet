@@ -2,26 +2,26 @@ Git has 3 environments
 
 Working files ---> Staging ---> Commit 
 
-GIT STATUS
+1. GIT STATUS
     Check the status of the files
         ```git status
 
-TRACK AND UNTRACK FILES
+2. TRACK AND UNTRACK FILES
     Track the files
         ```git add (file-name)
 
-    Untarack it 
+    Untrack it 
         ```git rm --cached (file-name)
 
-TRACK ALL FILES
+3. TRACK ALL FILES
     Track all files
         ```git add .
 
-COMMIT 
+4. COMMIT 
     Creating a snapshot or writing an entry in history book
         ```git commit -m "your message"
 
-MODIFY A FILE
+5. MODIFY A FILE
     View Differences
         ```git diff 
         later press q to exit
@@ -29,19 +29,19 @@ MODIFY A FILE
 If you are not ready with the changes go back to working file mode
     ```git restore --staged (file-name)
 
-BYPASS THE STAGING PHASE I.E. FROM WORKING DIRECTLY TO COMMIT (Not recommended)
+6. BYPASS THE STAGING PHASE I.E. FROM WORKING DIRECTLY TO COMMIT (Not recommended)
     ```git commit -a -m "your message"
 
-DELETE A FILE
+7. DELETE A FILE
     Delete file command 
         ``` git rm "(file-name)"
     But if you change your mind --- lolol like me 
         ```git restore "(file-name)"
 
-RENAME A File
+8. RENAME A File
     ```git mv  "(file-name)" "(file-name)"
 
-REVIEW COMMITS DONE SO FAR
+9. REVIEW COMMITS DONE SO FAR
     ```git log (commits with detailed desc)
     ```git log --oneline (this is for one line details)
 
@@ -57,7 +57,7 @@ REVIEW COMMITS DONE SO FAR
         goes to edit 
         press :x enter
 
-BRANCHES 
+10. BRANCHES 
     Basically a copy of your main branch - has all entries 
     used usually during bug fix 
 
@@ -79,6 +79,6 @@ BRANCHES
     SWITCH TO NEW BRANCH WHILE CREATING IT
         ```git switch -c branchName
 
-MERGE CONFLICTS
+11. MERGE CONFLICTS
 
 
