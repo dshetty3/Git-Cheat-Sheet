@@ -138,30 +138,30 @@ git merge branchName --- merge fail because of conflicts edit it in editor
 
 ## GITHUB (Cloud repo)
 
-# ADD ORIGIN TO YOUR LOCAL
+## ADD ORIGIN TO YOUR LOCAL
 ```bash
     git remote add origin your-repo-url
 ```
 
-# TARGET WHICH BRANCH YOU WANT TO SAVE YOUR WORK
+## TARGET WHICH BRANCH YOU WANT TO SAVE YOUR WORK
 ```bash
     git branch -M branch-name (default is main)
 ```
 
-# PUSH CONTENTS FROM LOCAL TO CLOUD
+## PUSH CONTENTS FROM LOCAL TO CLOUD
 ```bash
     git push -u origin branch-name (default main)
 ```
 
-# PUSH ALL THE LOCAL BRANCHES TO REPO
+## PUSH ALL THE LOCAL BRANCHES TO REPO
 ```bash
     git push --all
 ```
 
-# ISSUES
+## ISSUES
 Go to issues tab and create a new issue by assigning it to people.
 
-# CHANGES FROM REPO TO LOCAL MERGE
+## CHANGES FROM REPO TO LOCAL MERGE
 ```bash
     git fetch
     git merge
