@@ -1,88 +1,141 @@
 # My GIT and GitHub Learning
 
+## GIT (Local repo)
 Git has 3 environments 
 
-Working files ---> Staging ---> Commit 
+Working files ---> Staging ---> Commit
+
+## CONFIGURE NAME AND ADDRESS
+- **Configure name:** 
+```bash
+   git config --global user.name "your name"
+```
+
+- **Configure email:** 
+```bash
+   git config --global user.email your email
+```
+- **Initialize default branch name:** 
+```bash
+   git config --global init.default branch main
+```
 
 ## GIT STATUS
 - **Check the status of the files:** 
 
-    ```git status
-
+```bash
+    git status
+```
 ## TRACK AND UNTRACK FILES
 - **Track the files:** 
-    ```git add (file-name)
-
+```bash
+    git add <file-name>
+```
 - **UnTrack:** 
-    ```git rm --cached (file-name)
-
+ ```bash 
+     git rm --cached <file-name>
+```
 - **Track all Files:** 
-    ```git add .
+ ```bash 
+     git add .
+ ```
 
-## COMMIT 
-- **Creating a snapshot or writing an entry in history book:**
-    ```git commit -m "your message"
-
+## COMMIT
+- **Creating a snapshot or writing an entry in history book:** 
+```bash
+    git commit -m "your message"
+```
 ## MODIFY A FILE
-- **View Differences:**
-    ```git diff 
-        later press q to exit
+- **View Differences:** 
+```bash
+    git diff
+```
+   later press q to exit
 
 1. If you are not ready with the changes go back to working file mode:
-    ```git restore --staged (file-name)
-
+```bash
+    git restore --staged <file-name>
+```
 ## BYPASS THE STAGING PHASE
-    ```git commit -a -m "your message"
-
-## MODIFY A FILE
+```bash
+    git commit -a -m "your message"
+```
+## DELETE A FILE
 - **Delete file command:**
-    ``` git rm "(file-name)"
-        - **But if you change your mind --- lolol like me 
-            ```git restore "(file-name)"
-
-## RENAME A File
-    ```git mv  "(file-name)" "(file-name)"
-
+```bash
+    git rm <file-name>
+```
+- **But if you change your mind --- lolol like me:**
+```bash
+    git restore <file-name>
+```
+## RENAME A FILE
+```bash
+    git mv  "<old-file-name>" "<new-file-name>"
+```
 ## REVIEW COMMITS DONE SO FAR
-    ```git log (commits with detailed desc)
-    ```git log --oneline (this is for one line details)
+```bash
+    git log (commits with detailed desc)
+    git log --oneline (this is for one line details)
+```
+## AMMEND A COMMIT (Rather than going the long way -- correct the previous commit)
+```bash
+   git commit -m "your correct message" --amend
+```
+## DIG INTO THE SPECIFICS -- CHECK WHAT COMMITS WERE DONE
+```bash
+   git log -p
+```
+ ## MODIFY THE ORDER OF COMMITS 
+```bash
+   git rebase -i --root
+```
+goes to editor 
+press :x enter
+
+## BRANCHES
+Basically a copy of your main branch - has all entries used usually during bug fix 
+
+```bash
+# CREATE A NEW BRANCH
+git branch branchName
+
+# CHECK NUMBER OF BRANCHES YOU HAVE 
+git branch
+
+# SWITCH TO ANOTHER BRANCH
+git switch branch-name
+
+# MERGE YOUR CHANGES FROM YOUR BRANCH TO MAIN BRANCH
+git merge -m "your merge message" branch-name
+
+# DELETE THE BRANCH
+git branch -d FixTemp
+
+#SWITCH TO NEW BRANCH WHILE CREATING IT
+git switch -c branchName
+```
+
+## MERGE CONFLICTS
+```bash
+
+#SWITCH TO NEW BRANCH WHILE CREATING IT
+git switch -c branchName
+
+#COMMIT FOR BRANCH CHANGES
+git commit -a -m "Update Branch changes"
+
+#SWITCH TO MAIN
+git switch main
+
+#COMMIT FOR MAIN CHANGES
+git commit -a -m "Update Main changes"
+
+#MERGE CHANGES FROM BRANCH TO MAIN
+git merge branchName --- merge fail because of conflicts edit it in editor 
+```
 
 
-    AMMEND A COMMIT (Rather than going the long way -- correct the previous commit)
-        ```git commit -m "your correct message" --amend
-
-    DIG INTO THE SPECIFICS -- CHECK WHAT COMMITS WERE DONE
-        ```git log -p
-
-    MODIFY THE ORDER OF COMMITS 
-        ```git rebase -i --root
-        goes to edit 
-        press :x enter
-
-10. BRANCHES 
-    Basically a copy of your main branch - has all entries 
-    used usually during bug fix 
-
-    CREATE A NEW BRANCH
-        ```git branch branchName
-
-    CHECK NUMBER OF BRANCHES YOU HAVE 
-        ```git branch
-    
-    SWITCH TO ANOTHER BRANCH
-        ```git switch branch-name
-
-    MERGE YOUR CHANGES FROM YOUR BRANCH TO MAIN BRANCH
-        ```git merge -m "your merge message" branch-name
-
-    DELETE THE BRANCH
-        ```git branch -d FixTemp
-
-    SWITCH TO NEW BRANCH WHILE CREATING IT
-        ```git switch -c branchName
-
-11. MERGE CONFLICTS
- 
-
+## GITHUB (Cloud repo)
 
 
