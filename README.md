@@ -1,47 +1,48 @@
+# My GIT and GitHub Learning
+
 Git has 3 environments 
 
 Working files ---> Staging ---> Commit 
 
-1. GIT STATUS
-    Check the status of the files
-        ```git status
+## GIT STATUS
+- **Check the status of the files:** 
+    ```git status
 
-2. TRACK AND UNTRACK FILES
-    Track the files
-        ```git add (file-name)
+## TRACK AND UNTRACK FILES
+- **Track the files:** 
+    ```git add (file-name)
 
-    Untrack it 
-        ```git rm --cached (file-name)
+- **UnTrack:** 
+    ```git rm --cached (file-name)
 
-3. TRACK ALL FILES
-    Track all files
-        ```git add .
+- **Track all Files:** 
+    ```git add .
 
-4. COMMIT 
-    Creating a snapshot or writing an entry in history book
-        ```git commit -m "your message"
+## COMMIT 
+- **Creating a snapshot or writing an entry in history book:**
+    ```git commit -m "your message"
 
-5. MODIFY A FILE
-    View Differences
-        ```git diff 
+## MODIFY A FILE
+- **View Differences:**
+    ```git diff 
         later press q to exit
 
-If you are not ready with the changes go back to working file mode
+1. If you are not ready with the changes go back to working file mode:
     ```git restore --staged (file-name)
 
-6. BYPASS THE STAGING PHASE I.E. FROM WORKING DIRECTLY TO COMMIT (Not recommended)
+## BYPASS THE STAGING PHASE
     ```git commit -a -m "your message"
 
-7. DELETE A FILE
-    Delete file command 
-        ``` git rm "(file-name)"
-    But if you change your mind --- lolol like me 
-        ```git restore "(file-name)"
+## MODIFY A FILE
+- **Delete file command:**
+    ``` git rm "(file-name)"
+        - **But if you change your mind --- lolol like me 
+            ```git restore "(file-name)"
 
-8. RENAME A File
+## RENAME A File
     ```git mv  "(file-name)" "(file-name)"
 
-9. REVIEW COMMITS DONE SO FAR
+## REVIEW COMMITS DONE SO FAR
     ```git log (commits with detailed desc)
     ```git log --oneline (this is for one line details)
 
@@ -80,5 +81,7 @@ If you are not ready with the changes go back to working file mode
         ```git switch -c branchName
 
 11. MERGE CONFLICTS
+ 
+
 
 
