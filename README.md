@@ -3,43 +3,43 @@ Git has 3 environments
 Working files ---> Staging ---> Commit 
 
 GIT STATUS
-Check the status of the files
-    ```git status
+    Check the status of the files
+        ```git status
 
 TRACK AND UNTRACK FILES
-Track the files
-    ```git add <file-name>
+    Track the files
+        ```git add (file-name)
 
-Untarack it 
-    ```git rm --cached <file-name>
+    Untarack it 
+        ```git rm --cached (file-name)
 
 TRACK ALL FILES
-Track all files
-    ```git add .
+    Track all files
+        ```git add .
 
 COMMIT 
-Creating a snapshot or writing an entry in history book
-    ```git commit -m "your message"
+    Creating a snapshot or writing an entry in history book
+        ```git commit -m "your message"
 
 MODIFY A FILE
-View Differences
-    ```git diff 
-    later press q to exit
+    View Differences
+        ```git diff 
+        later press q to exit
 
 If you are not ready with the changes go back to working file mode
-    ```git restore --staged <file-name>
+    ```git restore --staged (file-name)
 
 BYPASS THE STAGING PHASE I.E. FROM WORKING DIRECTLY TO COMMIT (Not recommended)
     ```git commit -a -m "your message"
 
 DELETE A FILE
-Delete file command 
-    ``` git rm "<file-name>"
- But if you change your mind --- lolol like me 
-    ```git restore "<file-name>"
+    Delete file command 
+        ``` git rm "(file-name)"
+    But if you change your mind --- lolol like me 
+        ```git restore "(file-name)"
 
 RENAME A File
-    ```git mv  "<old-file-name>" "<new-file-name>"
+    ```git mv  "(file-name)" "(file-name)"
 
 REVIEW COMMITS DONE SO FAR
     ```git log (commits with detailed desc)
@@ -58,8 +58,8 @@ REVIEW COMMITS DONE SO FAR
         press :x enter
 
 BRANCHES 
-Basically a copy of your main branch - has all entries 
-used usually during bug fix 
+    Basically a copy of your main branch - has all entries 
+    used usually during bug fix 
 
     CREATE A NEW BRANCH
         ```git branch branchName
