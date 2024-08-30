@@ -6,7 +6,7 @@ Working files ---> Staging ---> Commit
 
 ## GIT STATUS
 - **Check the status of the files:** 
-    ```git status
+    ``` git status
 
 ## TRACK AND UNTRACK FILES
 - **Track the files:** 
